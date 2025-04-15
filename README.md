@@ -38,6 +38,3 @@ Authorization for configuration changes.
 Getting Started
 For detailed information on the system, refer to the complete SRS document.
 
-Team Black Bird
-Syracuse University CSE687
-April 25, 2023
