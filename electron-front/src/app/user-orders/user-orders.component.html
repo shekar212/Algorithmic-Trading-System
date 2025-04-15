@@ -1,0 +1,46 @@
+<app-user-header></app-user-header>
+
+<div class="container mt-5" style='margin-top: 100px;'> 
+    <h3>
+        Strategy Orders 
+    </h3>
+    <div class="row mt-5">
+        <div class="col ">
+        Cycles : {{orders.meta.cycles}}
+
+        </div>
+        <div class="col ">
+           No of Stocks : {{orders.meta.stocks}}
+    
+            </div>
+        <div class="col ">
+            Interval : {{orders.meta.interval}}
+    
+            </div>
+        <div class="col ">
+                Target Percent : {{orders.meta.targetPercent}}
+        
+                </div>
+        <div class="col ">
+                Stop Loss Percent : {{orders.meta.stopLoss}}
+            
+        </div></div>
+        <div class = "row mt-5">
+            <table class="table table-hover" > 
+                <tr>
+                    <th>Price</th>
+                    <th>Timestamp</th>
+                    <th>Type</th>
+                </tr>
+               <tr *ngFor="let ord of orders.orders">
+                <td>{{ord.price}}</td>
+                <td>{{ord.time}}</td>
+                <td>
+                    {{ord.type}}
+                </td>
+               </tr>
+            </table>
+        </div>
+        
+        
+    </div>

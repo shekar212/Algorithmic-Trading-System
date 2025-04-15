@@ -1,0 +1,23 @@
+<app-user-header></app-user-header>
+
+<div class="container" style='margin-top: 100px;'> 
+    <h3>
+        Discover 
+    </h3>
+    <div class="row">
+        <div class="col-md-12 mt-5" *ngFor="let strategy of strategies">
+            <div class='card'>
+            <div class = 'card-header'>
+                {{strategy.strategy}}
+            </div>
+            <div class="card-body">
+                {{strategy.descp}}
+            </div>
+            <div class="card-footer">
+                <a [routerLink]="['/subscribe',strategy.id]" class="btn btn-secondary">
+                            Subscribe
+                </a>
+            </div>
+            </div>
+        </div>
+    </div></div>
